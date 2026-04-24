@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>HdLabs.Capture</AssemblyName>
+    <RootNamespace>HdLabs.Capture</RootNamespace>
+    <Product>HdLabs</Product>
+    <ApplicationIcon>..\..\assets\hd_icon_green.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HdLabs.Common\HdLabs.Common.csproj" />
+  </ItemGroup>
+
+</Project>

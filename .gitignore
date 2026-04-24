@@ -1,0 +1,43 @@
+## .NET / Visual Studio
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.rsuser
+project.lock.json
+project.fragment.lock.json
+artifacts/
+TestResults/
+*.Cache
+*.cache
+*.ilk
+*.meta
+*.obj
+*.log
+*.vspscc
+*.vssscc
+*.pidb
+*.svclog
+*.scc
+
+## NuGet
+*.nupkg
+**/*.[Pp]ackages/
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+## Others
+*.DotSettings.user
+*.aps
+*.DS_Store
+Thumbs.db

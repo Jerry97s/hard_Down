@@ -1,0 +1,35 @@
+﻿<Window x:Class="HdLabs.Capture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HdLabs.Capture"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Icon="{StaticResource HdAppIcon}" Height="520" Width="920" WindowStartupLocation="CenterScreen">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,0,12">
+            <TextBlock Text="{Binding Title}" FontSize="22" FontWeight="SemiBold"/>
+            <TextBlock Text="MVVM skeleton + theme applied. Next: capture hotkeys + snip overlay." Foreground="{StaticResource EzMutedBrush}"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" Style="{StaticResource Card}">
+            <StackPanel>
+                <TextBlock Text="Status" Foreground="{StaticResource EzMutedBrush}" />
+                <TextBlock Text="{Binding Status}" FontSize="18" Margin="0,4,0,12"/>
+                <WrapPanel>
+                    <Button Style="{StaticResource PrimaryButton}" Content="Ready" Command="{Binding SetReadyCommand}" Margin="0,0,8,0"/>
+                    <Button Content="(Next) Region Capture" IsEnabled="False" Margin="0,0,8,0"/>
+                    <Button Content="(Next) Screen Record" IsEnabled="False"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <TextBlock Grid.Row="2" Text="EzLabs.Common shared MVVM + Theme" Foreground="{StaticResource EzMutedBrush}" Margin="2,10,0,0"/>
+    </Grid>
+</Window>

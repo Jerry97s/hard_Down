@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>HdLabs.Common</AssemblyName>
+    <RootNamespace>HdLabs.Common</RootNamespace>
+    <Product>HdLabs</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\assets\hd_icon_green.png" Link="Assets\hd_icon_green.png" />
+  </ItemGroup>
+
+</Project>
